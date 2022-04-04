@@ -13,7 +13,8 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.db import models
 from django.test.client import Client
-from django.utils.encoding import iri_to_uri, python_2_unicode_compatible
+from django.utils.encoding import iri_to_uri
+from six import python_2_unicode_compatible
 from django.utils.http import urlunquote
 from django.utils.six.moves import http_client
 from django.utils.six.moves.urllib.error import HTTPError, URLError
