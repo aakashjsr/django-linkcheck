@@ -15,7 +15,7 @@ from django.db import models
 from django.test.client import Client
 from django.utils.encoding import iri_to_uri
 from six import python_2_unicode_compatible
-from django.utils.http import urlunquote
+from urllib.parse import unquote as urlunquote
 from django.utils.six.moves import http_client
 from django.utils.six.moves.urllib.error import HTTPError, URLError
 from django.utils.six.moves.urllib.request import HTTPRedirectHandler, Request, build_opener
